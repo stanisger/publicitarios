@@ -1,0 +1,41 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 25/07/2017 19:31
+    */
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("fontProyect/Flaticon.eot");
+  src: url("fontProyect/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("fontProyect/Flaticon.woff") format("woff"),
+       url("fontProyect/Flaticon.ttf") format("truetype"),
+       url("fontProyect/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("fontProyect/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+        font-family: "Flaticon";
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        line-height: 1;
+        text-decoration: inherit;
+        text-rendering: optimizeLegibility;
+        text-transform: none;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-smoothing: antialiased;
+        }
+
+    .flaticon-sent-mail:before { content: "\f100"; }
+    
+     $font-Flaticon-sent-mail: "\f100";

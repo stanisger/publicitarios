@@ -1,0 +1,47 @@
+// * ∆∆ VARIABLES ∆∆ *
+
+$pink: #ee4261;
+$purple : #2a1f5d;
+$purpleLight: #6a58a4;
+$purpleUltra: #f2f0f7;
+
+$pinkLight: #f1706d;
+$font: #5d5d5d;
+$grayLight: #efefef;
+$grayStrong: #333333;
+$white: white;
+
+
+
+//∆∆ COLORS ∆∆
+
+// ∆  PINK 
+.bgPink{background: $pink;} 
+.colorPink{color: $pink;}
+
+// ∆  PINK 
+.bgWhite{background: $white;} 
+.colorWhite{color: $white;}
+
+// ∆  PINK light
+.bgPinkLight{background: $purpleLight; background-color: $purpleLight !important;}
+.colorPinkLight{color: $purpleLight;}
+
+// ∆  FONT color
+.bgFont{background: $font;}
+.colorFont{color: $font;}
+
+// ∆ PURPLE
+.bgPurple{background: $purple;}
+.colorPurple{color: $purple;}
+
+// ∆ PURPLE light
+.bgPurpleLight{background: $purpleLight;}
+.colorPurpleLight{color: $purpleLight;}
+
+
+// ∆ PURPLE light
+.bgPurpleUltra{background: $purpleUltra;}
+.colorPurpleUltra{color: $purpleUltra;}
+
+

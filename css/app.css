@@ -1,0 +1,739 @@
+@charset "UTF-8";
+a {
+  transition: color .4s; }
+
+.extra {
+  font-weight: 800; }
+
+.bold {
+  font-weight: 700; }
+
+.medium {
+  font-weight: 600; }
+
+.regular {
+  font-weight: 400; }
+
+.light {
+  font-weight: 300; }
+
+.thing {
+  font-weight: 300; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.font2 {
+  font-family: 'Montserrat', sans-serif !important; }
+
+.block {
+  display: block; }
+
+.inlineBlock {
+  display: inline-block; }
+
+.inline {
+  display: inline; }
+
+.w100 {
+  width: 100%; }
+
+.w50 {
+  width: 50%; }
+
+.w25 {
+  width: 25%; }
+
+.w10 {
+  width: 10%; }
+
+ul.general {
+  list-style: none;
+  position: relative; }
+
+ul.general li {
+  padding-left: 25px;
+  padding-right: 20px;
+  margin-bottom: 18px;
+  line-height: 18px; }
+
+ul.general li:before {
+  font-family: Flaticon;
+  position: absolute;
+  left: 5px;
+  content: "\f100";
+  color: #C60; }
+
+.transitionW {
+  transition: all 1s; }
+
+.center-align {
+  text-align: center; }
+
+.bgPink {
+  background: #ee4261; }
+
+.colorPink {
+  color: #ee4261; }
+
+.bgWhite {
+  background: white; }
+
+.colorWhite {
+  color: white; }
+
+.bgPinkLight {
+  background: #6a58a4;
+  background-color: #6a58a4 !important; }
+
+.colorPinkLight {
+  color: #6a58a4; }
+
+.bgFont {
+  background: #5d5d5d; }
+
+.colorFont {
+  color: #5d5d5d; }
+
+.bgPurple {
+  background: #2a1f5d; }
+
+.colorPurple {
+  color: #2a1f5d; }
+
+.bgPurpleLight {
+  background: #6a58a4; }
+
+.colorPurpleLight {
+  color: #6a58a4; }
+
+.bgPurpleUltra {
+  background: #f2f0f7; }
+
+.colorPurpleUltra {
+  color: #f2f0f7; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: white; }
+
+.off-canvas {
+  background: #f2f0f7; }
+  .off-canvas .menuApp {
+    padding-top: 1em; }
+    .off-canvas .menuApp li:nth-child(1) {
+      font-size: .84em; }
+    .off-canvas .menuApp li:last-child {
+      border-top: 1px solid rgba(106, 88, 164, 0.4);
+      font-size: 1.2em;
+      color: #2a1f5d;
+      padding: .2em 1em; }
+      .off-canvas .menuApp li:last-child i {
+        margin-left: 0;
+        font-size: 1.4em;
+        transition: color .4s; }
+        .off-canvas .menuApp li:last-child i:hover {
+          color: #6a58a4; }
+    .off-canvas .menuApp li:nth-child(7) {
+      margin-bottom: .5em; }
+    .off-canvas .menuApp li {
+      text-transform: uppercase;
+      font-size: .74em;
+      padding: .2em 0; }
+      .off-canvas .menuApp li i {
+        margin-right: .5em;
+        font-size: 1.4em; }
+      .off-canvas .menuApp li a {
+        color: #2a1f5d; }
+        .off-canvas .menuApp li a:hover {
+          color: #6a58a4; }
+
+main {
+  background: white;
+  margin: auto;
+  max-width: 85em;
+  width: 100%; }
+  @media screen and (min-width: 40em) {
+    main {
+      padding: 0 1em; } }
+
+header {
+  position: relative;
+  background: white;
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.18); }
+  header > i {
+    color: #5d5d5d;
+    position: absolute;
+    top: 1.5em;
+    right: 1em;
+    font-size: 2em;
+    cursor: pointer;
+    transition: color .4s; }
+    header > i:hover {
+      color: #2a1f5d; }
+  header #header-logo {
+    padding: .5em !important; }
+    header #header-logo img {
+      max-width: 200px; }
+      @media screen and (min-width: 64em) {
+        header #header-logo img {
+          max-width: 100%; } }
+  header nav a {
+    color: #5d5d5d;
+    font-weight: 100;
+    font-size: 14px;
+    transition: color .4s; }
+    header nav a:hover {
+      color: #2a1f5d; }
+  @media screen and (min-width: 64em) {
+    header nav {
+      display: block;
+      padding: 3.4% .4% 0 !important; } }
+  header #header-tel {
+    background: #333333;
+    text-align: right;
+    padding: .25em .5em !important; }
+    header #header-tel i {
+      font-size: 1.2em;
+      vertical-align: middle;
+      color: #ee4261; }
+    header #header-tel a {
+      font-size: 1em;
+      letter-spacing: -1px;
+      font-weight: 300;
+      color: white; }
+      header #header-tel a:hover {
+        color: #5d5d5d; }
+
+#eyecatcher {
+  width: 100%;
+  height: 635px;
+  text-align: center;
+  background: #e6e6e6;
+  background-size: 35em;
+  background-repeat: no-repeat;
+  background-position: left 110%;
+  background-image: url(../assets/images/clicks-publicitarios-bgEyecatcher.png); }
+  #eyecatcher h1 {
+    font-size: 2em;
+    line-height: 1em; }
+  #eyecatcher h2 {
+    margin-bottom: 2em; }
+  #eyecatcher .copy {
+    padding: 6em .5em; }
+  @media (min-width: 559px) {
+    #eyecatcher {
+      background-position: center  145%;
+      background-size: 45em; } }
+
+#mainor {
+  background: #efefef;
+  margin-top: 1em;
+  padding: 3em 0.5em;
+  text-align: center; }
+  #mainor h2 {
+    font-size: 1.5em;
+    line-height: 1em;
+    font-weight: 200;
+    margin-bottom: 1em; }
+    #mainor h2 i {
+      font-weight: bold;
+      font-style: normal;
+      opacity: 0.8; }
+    #mainor h2 i:nth-child(1) {
+      color: #4285f4; }
+    #mainor h2 i:nth-child(2) {
+      color: #ea4335; }
+    #mainor h2 i:nth-child(3) {
+      color: #fbbc05; }
+    #mainor h2 i:nth-child(4) {
+      color: #34a853; }
+    #mainor h2 i:nth-child(5) {
+      color: #4285f4; }
+    #mainor h2 i:nth-child(6) {
+      color: #ea4335; }
+  #mainor .text {
+    font-weight: 300;
+    padding: 0;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin-bottom: 2em; }
+  #mainor ul.tabs {
+    max-width: 286px;
+    margin: 0 auto;
+    border: 0;
+    background: #efefef; }
+    #mainor ul.tabs li.tabs-title {
+      display: inline-block;
+      float: none;
+      width: 32.3%;
+      background: #e6e6e6;
+      border-radius: 7px 10px 0px 0px;
+      -moz-border-radius: 7px 10px 0px 0px;
+      -webkit-border-radius: 7px 10px 0px 0px;
+      border: 0px solid #000000; }
+      #mainor ul.tabs li.tabs-title a {
+        color: white;
+        background: transparent; }
+    #mainor ul.tabs li:nth-child(2) {
+      border-right: 1px solid #efefef; }
+    #mainor ul.tabs li:nth-child(3).is-active + li:nth-child(2) {
+      border-right: 1px solid #efefef; }
+    #mainor ul.tabs li.is-active a {
+      color: #2a1f5d;
+      background: white; }
+  #mainor .tabs-panel {
+    max-width: 320px;
+    margin: 0 auto;
+    padding-top: 0; }
+    #mainor .tabs-panel article {
+      padding: .5em;
+      margin-bottom: .5em;
+      max-width: 320px;
+      border: 0; }
+      #mainor .tabs-panel article .card__item {
+        background: #efefef;
+        position: relative;
+        padding: .5em; }
+        #mainor .tabs-panel article .card__item span {
+          opacity: .06;
+          top: 0;
+          left: 16px;
+          font-size: 3.063em;
+          position: absolute; }
+        #mainor .tabs-panel article .card__item img {
+          width: 38%;
+          margin: 0 auto .5em; }
+        #mainor .tabs-panel article .card__item h3 {
+          font-size: 1.25em;
+          font-weight: 200; }
+        #mainor .tabs-panel article .card__item p {
+          font-weight: 300;
+          padding: 0;
+          font-size: 0.9em;
+          line-height: 1.4em;
+          margin-bottom: 1.5em; }
+
+#promo {
+  margin: 1em 0;
+  padding: .0em  1em; }
+  #promo article {
+    padding: .5em;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+    height: 16em;
+    margin-bottom: 0em; }
+    #promo article .copy {
+      padding: 1.5em;
+      max-width: 360px; }
+  #promo article:nth-child(1) {
+    margin-bottom: .5em;
+    background: url(../assets/images/tipos-de-campana-google-adworks.jpg) center; }
+    #promo article:nth-child(1) .copy h2 {
+      font-size: 1.5em;
+      line-height: 1em;
+      margin-bottom: .5em; }
+    #promo article:nth-child(1) .copy h3 {
+      font-size: 1em;
+      margin-bottom: 3.5em; }
+    #promo article:nth-child(1) .copy p {
+      font-weight: 300;
+      font-size: .9em;
+      line-height: 1.4em;
+      margin-bottom: 2em;
+      display: none; }
+  #promo article:nth-child(2) {
+    background: url(../assets/images/promociones-google-adworks.jpg) center; }
+    #promo article:nth-child(2) .copy {
+      min-height: 240px; }
+    #promo article:nth-child(2) h2 {
+      font-size: 1.5em;
+      line-height: 1em;
+      margin-bottom: .5em; }
+
+#price {
+  background: #f2f0f7;
+  margin-top: 1em;
+  padding: 3em 0.5em;
+  text-align: center; }
+  #price h2 {
+    font-size: 1.5em;
+    line-height: 1em;
+    font-weight: 200;
+    margin-bottom: 1.5em; }
+  #price p {
+    font-weight: 300;
+    padding: 0 1em;
+    font-size: .9em;
+    line-height: 1.4em;
+    margin-bottom: 2em; }
+  #price .card__price {
+    padding: .5em;
+    background: white; }
+    #price .card__price .card__price-head {
+      margin: 0;
+      padding: 2em 1em 1.5em;
+      -webkit-background-size: cover !important;
+      -moz-background-size: cover !important;
+      -o-background-size: cover !important;
+      background-size: cover !important;
+      width: 100%; }
+      #price .card__price .card__price-head h3 {
+        font-size: 1.2em;
+        line-height: 1em;
+        color: white; }
+      #price .card__price .card__price-head p {
+        color: white;
+        font-weight: 700;
+        font-size: .8em;
+        line-height: 1em;
+        margin-bottom: 1em; }
+    #price .card__price .card__price-text {
+      background: #f2f0f7;
+      padding: .5em;
+      position: relative; }
+      #price .card__price .card__price-text ul {
+        padding: .8em 0 0; }
+        #price .card__price .card__price-text ul li {
+          text-align: left;
+          font-weight: 300;
+          font-size: .85em;
+          line-height: 1.2;
+          margin-bottom: .8em;
+          list-style: none;
+          position: relative; }
+          #price .card__price .card__price-text ul li:before {
+            content: " •";
+            color: #2a1f5d;
+            position: absolute;
+            left: -.5em; }
+        #price .card__price .card__price-text ul li:last-child {
+          font-weight: bold; }
+          #price .card__price .card__price-text ul li:last-child:before {
+            content: " "; }
+      #price .card__price .card__price-text button {
+        right: 1em;
+        bottom: 1.5em;
+        position: absolute; }
+  #price .orbit-container {
+    max-width: 320px;
+    margin: 0 auto; }
+    #price .orbit-container .orbit-slide:nth-child(3) .card__price-head {
+      background: url(../assets/images/planes-capanas-google-adworks-1.jpg) center; }
+    #price .orbit-container .orbit-slide:nth-child(4) .card__price-head {
+      background: url(../assets/images/planes-capanas-google-adworks-2.jpg) center; }
+    #price .orbit-container .orbit-slide:nth-child(5) .card__price-head {
+      background: url(../assets/images/planes-capanas-google-adworks-3.jpg) center; }
+  #price .orbit-previous, #price .orbit-next {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 10;
+    padding: 1rem .3rem;
+    color: white;
+    background: #6a58a4;
+    z-index: 4; }
+
+#other {
+  padding: 1em; }
+  #other article {
+    width: 100%; }
+  #other article:nth-child(1) {
+    background: url(../assets/images/otros-servicios.jpg) center;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+    height: 190px; }
+  #other article:nth-child(2) {
+    background: #f2f0f7;
+    padding: 2.5em  1em; }
+    #other article:nth-child(2) h2 {
+      font-size: 1.5em;
+      line-height: 1em;
+      font-weight: 200;
+      margin-bottom: 1em; }
+    #other article:nth-child(2) p {
+      font-weight: 300;
+      color: #5d5d5d;
+      font-size: .85em;
+      line-height: 1.4em;
+      margin-bottom: 1em; }
+    #other article:nth-child(2) ul {
+      padding: .2em 0 1em; }
+      #other article:nth-child(2) ul li {
+        text-align: left;
+        color: #5d5d5d;
+        font-weight: 300;
+        font-size: .85em;
+        line-height: 1.2;
+        margin-bottom: .8em;
+        list-style: none;
+        position: relative; }
+        #other article:nth-child(2) ul li:before {
+          content: " •";
+          color: #2a1f5d;
+          position: absolute;
+          left: -.5em; }
+
+#contact {
+  background: url(../assets/images/conatctBg.jpg) center;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+  padding: 3em 0.5em; }
+  #contact .translucent-form-overlay {
+    width: 320px;
+    margin: 0 auto; }
+    #contact .translucent-form-overlay h2 {
+      font-size: 1.5em;
+      line-height: 1em;
+      font-weight: 200;
+      margin-bottom: 1em;
+      text-align: center; }
+    #contact .translucent-form-overlay label {
+      font-weight: 400;
+      color: #2a1f5d;
+      font-size: .85em;
+      line-height: 1.4em;
+      margin-bottom: 1em; }
+      #contact .translucent-form-overlay label input {
+        border-radius: .5em; }
+      #contact .translucent-form-overlay label select {
+        border-radius: .5em; }
+  #contact .padding1 {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem; }
+  #contact .terminos {
+    font-size: .9em;
+    color: #5d5d5d; }
+    #contact .terminos a {
+      color: #2a1f5d;
+      text-decoration: underline; }
+
+.reveal {
+  padding: 1em;
+  background: #efefef; }
+  .reveal .content-modal {
+    max-width: 320px;
+    margin: 0 auto;
+    background: white;
+    height: 100%;
+    padding: 1em; }
+    .reveal .content-modal article {
+      width: 100%; }
+    .reveal .content-modal article:nth-child(1) {
+      -webkit-background-size: cover !important;
+      -moz-background-size: cover !important;
+      -o-background-size: cover !important;
+      background-size: cover !important;
+      height: 190px;
+      background: url(../assets/images/tipos-de-campana-google-adworks.jpg) center;
+      padding: 1em; }
+      .reveal .content-modal article:nth-child(1) .text {
+        background: rgba(255, 255, 255, 0.5);
+        height: 100%;
+        padding: 3em 1em; }
+        .reveal .content-modal article:nth-child(1) .text h2 {
+          margin: 0;
+          padding: 0; }
+        .reveal .content-modal article:nth-child(1) .text p {
+          font-size: .8em; }
+    .reveal .content-modal article:nth-child(2) {
+      text-align: center;
+      padding: 2em 1em; }
+      .reveal .content-modal article:nth-child(2) h2 {
+        font-size: 1.5em;
+        line-height: 1em;
+        font-weight: 200;
+        margin-bottom: 1em; }
+      .reveal .content-modal article:nth-child(2) p {
+        font-weight: 300;
+        color: #5d5d5d;
+        font-size: .85em;
+        line-height: 1.4em;
+        margin-bottom: 1em; }
+        .reveal .content-modal article:nth-child(2) p strong {
+          font-weight: bold; }
+
+#testimoniales {
+  background: #efefef;
+  margin-top: 1em;
+  padding: 3em 0.5em;
+  text-align: center; }
+  #testimoniales h2 {
+    font-size: 1.5em;
+    line-height: 1em;
+    font-weight: 200;
+    margin-bottom: .5em; }
+  #testimoniales p {
+    font-weight: 300;
+    padding: 0 1em;
+    font-size: .9em;
+    line-height: 1.4em;
+    margin-bottom: 2em; }
+  #testimoniales .card__testimoniales {
+    background: white;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: .5em; }
+    #testimoniales .card__testimoniales .card_testimoniales-content {
+      background: #f2f0f7;
+      padding: 1em; }
+      #testimoniales .card__testimoniales .card_testimoniales-content img {
+        width: 140px;
+        border-radius: 50%;
+        margin-bottom: 1em; }
+      #testimoniales .card__testimoniales .card_testimoniales-content h4 {
+        font-size: 1.2em;
+        line-height: 1em;
+        margin-bottom: 1em; }
+      #testimoniales .card__testimoniales .card_testimoniales-content p {
+        font-weight: 300;
+        padding: 0 1em;
+        font-size: .8em;
+        line-height: 1.2em;
+        max-width: 320px;
+        margin: 0 auto 1em;
+        display: block; }
+  #testimoniales .content-testimonial {
+    margin-bottom: 1em; }
+  #testimoniales .featured-testimonials-section {
+    padding: 2rem 1rem; }
+  #testimoniales .featured-testimonials-section .featured-testimonials-container .orbit-previous {
+    color: #0a0a0a;
+    left: -1rem; }
+  #testimoniales .featured-testimonials-section .featured-testimonials-container .orbit-next {
+    color: #0a0a0a;
+    right: -1rem; }
+  #testimoniales .featured-testimonials-section .testimonial {
+    margin: .5em;
+    text-align: left;
+    padding: 1em; }
+  #testimoniales .featured-testimonials-section .testimonial h3 {
+    margin-bottom: 1em; }
+  #testimoniales .featured-testimonials-section .testimonial p {
+    color: #5d5d5d;
+    font-size: .85em; }
+  #testimoniales .featured-testimonials-section .profile-pic {
+    max-width: 100px;
+    border-radius: 50%; }
+  #testimoniales .featured-testimonials-section .featured-testimonials-quotation {
+    margin-left: 3rem;
+    margin-bottom: 0rem;
+    padding: 1rem;
+    position: relative; }
+  #testimoniales .featured-testimonials-section .featured-testimonials-quotation::before {
+    content: "“";
+    font-size: 5rem;
+    color: #d6d6d6;
+    position: absolute;
+    left: 0;
+    font-family: 'Montserrat'; }
+  #testimoniales .featured-testimonials-section .featured-testimonials-quotation::after {
+    content: "”";
+    font-size: 5rem;
+    color: #d6d6d6;
+    position: absolute;
+    bottom: -1rem;
+    right: 0;
+    font-family: 'Montserrat'; }
+  @media screen and (max-width: 39.9375em) {
+    #testimoniales .featured-testimonials-section .featured-testimonials-quotation {
+      margin-left: 0; } }
+
+.send .input-group-rounded {
+  max-width: 16em;
+  margin: 0 auto 0; }
+  .send .input-group-rounded .input-group-field {
+    border-radius: 1000px 0 0 1000px;
+    padding-left: 1rem; }
+  .send .input-group-rounded .input-group-button .button {
+    border-radius: 0 1000px 1000px 0;
+    font-size: 0.8rem;
+    background-image: url(../assets/images/iconSend.png);
+    background-position: 37% 56%;
+    background-repeat: no-repeat;
+    background-color: #ee4261;
+    color: white;
+    position: relative;
+    width: 4.2em; }
+    .send .input-group-rounded .input-group-button .button:hover {
+      background-color: #2a1f5d; }
+.send span {
+  font-size: .8em; }
+
+button.general {
+  background: #ee4261;
+  color: white;
+  font-size: .9em;
+  border-radius: .8em;
+  padding: 1em 2em;
+  cursor: pointer;
+  transition: background .4s; }
+  button.general:hover {
+    background: #2a1f5d; }
+
+.ecommerce-product-slider .orbit-previous,
+.ecommerce-product-slider .orbit-next {
+  color: #cacaca; }
+
+.ecommerce-product-slider .orbit-bullets button {
+  height: 0.65rem;
+  width: 0.65rem; }
+
+.ecommerce-product-slider .product-card {
+  background-color: #fefefe;
+  border: 1px solid #e6e6e6;
+  padding: 1rem;
+  margin-bottom: 1.5rem; }
+
+.ecommerce-product-slider .product-card-thumbnail {
+  display: block;
+  position: relative; }
+
+.ecommerce-product-slider .product-card-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.45rem;
+  margin-top: 1rem;
+  margin-bottom: 0; }
+
+.ecommerce-product-slider .product-card-desc {
+  color: #8a8a8a;
+  display: block;
+  font-size: 0.85rem; }
+
+.ecommerce-product-slider .product-card-price {
+  color: #3e3e3e;
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.8rem; }
+
+.ecommerce-product-slider .product-card-sale {
+  color: #cacaca;
+  display: inline-block;
+  font-size: 0.85rem;
+  margin-left: 0.3rem;
+  text-decoration: line-through; }
+
+.ecommerce-product-slider .product-card-colors {
+  display: block;
+  margin-top: 0.8rem; }
+
+.ecommerce-product-slider .product-card-color-option {
+  display: inline-block;
+  height: 25px;
+  width: 25px; }
+
+/*# sourceMappingURL=app.css.map */

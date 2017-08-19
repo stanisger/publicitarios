@@ -1,0 +1,780 @@
+
+body{
+	font-family: 'Roboto', sans-serif;
+	background: white;
+}
+.off-canvas{
+    background: $purpleUltra;
+    .menuApp{
+      padding-top: 1em;
+      li:nth-child(1){
+        font-size: .84em;
+      }
+      li:last-child{
+        border-top: 1px solid rgba($purpleLight, .4);
+        font-size: 1.2em;
+        color: $purple;
+         padding: .2em 1em;
+         i{
+            margin-left: 0;
+            font-size: 1.4em;
+            transition: color .4s;
+             &:hover{
+                color: $purpleLight;
+            }
+        }
+
+      }
+     li:nth-child(7){
+        margin-bottom: .5em;
+     }
+      li{
+        text-transform: uppercase;
+        font-size: .74em;
+        padding: .2em 0;
+        i{
+            margin-right: .5em;
+            font-size: 1.4em;
+        }
+        a{
+            color: $purple;
+            &:hover{
+                color: $purpleLight;
+            }
+        }
+      }
+    }
+}
+main{
+	background: white;
+	margin: auto;
+	max-width:85em;
+	width: 100%;
+	 @media screen and (min-width: 40em) {
+                   padding:0 1em;
+	}
+} 
+// ∆ header
+header{
+	position: relative;
+            background: white;
+            -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.18);
+            -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.18);
+            box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.18);
+
+	>i{
+		color: $font;
+		position: absolute;
+		top: 1.5em;
+		right: 1em;
+		font-size: 2em;
+		cursor: pointer;
+		transition: color .4s;
+		&:hover{
+			color: $purple;
+		}
+
+	}
+	
+	// ∆ logo
+	#header-logo{
+		padding: .5em !important; 
+		img{
+			max-width: 200px;
+			 @media screen and (min-width: 64em) {
+				max-width: 100%;
+			}
+		}
+	}
+
+    // ∆ nav
+    nav{
+    	a{
+    		color: $font;
+    		font-weight: 100;
+    		font-size: 14px;
+    		transition: color .4s;
+    		&:hover{
+    			color: $purple;
+    		}
+    	}
+    	@media screen and (min-width: 64em){
+    		display: block;
+    		padding: 3.4% .4% 0 !important;
+    	}
+    }
+
+    #header-tel{
+    	background: $grayStrong;
+    	text-align: right;
+    	padding: .25em .5em !important;
+    	i{
+    		font-size: 1.2em;
+    		vertical-align: middle;
+    		color: $pink;
+    	}
+    	a{
+    	   font-size: 1em;
+    	   letter-spacing: -1px;
+    	   font-weight: 300;
+    	   color: white;
+    		&:hover{
+    			color: $font;
+    		}
+    	}
+    }
+}
+// header ∆ 
+
+//∆ eyecatcher
+ #eyecatcher{
+ 	width: 100%;
+ 	height:  635px;
+ 	text-align: center;
+ 	background: #e6e6e6;
+ 	background-size: 35em;
+ 	background-repeat: no-repeat;
+ 	background-position: left 110%;
+ 	background-image: url(../assets/images/clicks-publicitarios-bgEyecatcher.png);
+ 	h1{
+ 		font-size: 2em;
+ 		line-height: 1em;
+ 	}
+                h2{
+                    margin-bottom: 2em;
+                }
+ 	.copy{
+ 		padding: 6em .5em;
+ 	}
+    @media(min-width:559px){
+        background-position: center  145%;
+        background-size: 45em;
+    }
+ }  
+
+ //∆ mainor
+
+ #mainor{
+ 	background: $grayLight;
+ 	margin-top: 1em;
+ 	padding: 3em .5em ;
+ 	text-align: center;
+    h2{
+    	font-size:1.5em;
+    	line-height: 1em;
+    	font-weight: 200;
+        margin-bottom: 1em;
+    	i{
+    		font-weight: bold;
+    		font-style: normal;
+    		opacity: .8	;
+    	}
+    	i:nth-child(1){
+    		color: #4285f4;
+    	}
+    	i:nth-child(2){
+    		color:#ea4335;
+    	}
+    	i:nth-child(3){
+    		color: #fbbc05;
+    	}
+    	i:nth-child(4){
+    		color:  #34a853;
+    	}
+    	i:nth-child(5){
+    		color:  #4285f4;
+    	}
+    	i:nth-child(6){
+    		color:  #ea4335;
+    	}
+    }
+   .text{
+        font-weight: 300;
+        padding: 0 ;
+        font-size: .9em ;
+        line-height: 1.5em;
+        margin-bottom: 2em;
+    }
+    ul.tabs{
+        max-width: 286px;
+        margin: 0 auto;
+        border: 0;
+        background: #efefef;
+        li.tabs-title{
+            display: inline-block;
+            float: none;
+            width: 32.3%;
+            background:   #e6e6e6;
+            border-radius: 7px 10px 0px 0px;
+            -moz-border-radius: 7px 10px 0px 0px;
+            -webkit-border-radius: 7px 10px 0px 0px;
+            border: 0px solid #000000;
+            a{
+                color: white;
+                background: transparent;
+            }
+        }
+        li:nth-child(2){
+            border-right: 1px solid $grayLight;
+        }
+        li:nth-child(3).is-active{
+           + li:nth-child(2){
+            border-right: 1px solid $grayLight;
+          }
+        }
+       
+        li.is-active{
+
+            a{
+             color: $purple;
+             background: white;
+            }
+        }
+    }
+    .tabs-panel{  
+        max-width: 320px;
+        margin: 0 auto;
+        padding-top: 0;
+        article{
+            padding: .5em;
+            margin-bottom: .5em;
+            max-width: 320px;
+            border: 0;
+
+             .card__item{
+                background: $grayLight;
+                position: relative;
+                padding: .5em;
+                span{
+                    opacity: .06;
+                    top:0;
+                    left: 16px;
+                    font-size: 3.063em;
+                    position: absolute;
+                }
+                img{
+                    width: 38%;
+                    margin: 0 auto .5em;
+                }
+                h3{
+                    font-size: 1.25em;
+                    font-weight: 200;
+                }
+                p{
+                  font-weight: 300;
+                  padding: 0 ;
+                   font-size: .9em ;
+                    line-height: 1.4em;
+                    margin-bottom: 1.5em;
+                }
+            }
+        }
+    }
+ }
+
+// ∆∆ promo
+ #promo{
+    margin: 1em 0;
+    padding: .0em  1em;
+    article{
+        padding: .5em;
+        @include cover;
+        height: 16em;
+        margin-bottom: 0em;
+        .copy{
+            padding: 1.5em;
+            max-width: 360px;
+ 
+        }
+
+    }
+    article:nth-child(1){
+             margin-bottom: .5em;
+            background: url(../assets/images/tipos-de-campana-google-adworks.jpg) center;
+                .copy{
+                    h2{
+                        font-size: 1.5em;
+                        line-height: 1em;
+                        margin-bottom:.5em;
+                    }
+                    h3{
+                        font-size: 1em;
+                        margin-bottom: 3.5em;
+                    }
+                    p{
+                        font-weight: 300;
+                        font-size: .9em;
+                        line-height: 1.4em;
+                        margin-bottom: 2em;
+                        display: none;
+
+                    }
+
+                }
+      }
+       article:nth-child(2){
+                background: url(../assets/images/promociones-google-adworks.jpg) center;
+                .copy{
+                    min-height: 240px;
+                }
+
+                 h2{
+                        font-size: 1.5em;
+                        line-height: 1em;
+                        margin-bottom:.5em;
+                    }
+            }
+ }
+
+
+// price
+#price{
+    background: $purpleUltra;
+    margin-top: 1em;
+    padding: 3em .5em ;
+    text-align: center;
+    h2{
+        font-size: 1.5em;
+        line-height: 1em;
+        font-weight: 200;
+        margin-bottom: 1.5em;
+    }   
+     p{
+        font-weight: 300;
+        padding: 0 1em;
+        font-size: .9em;
+        line-height: 1.4em;
+        margin-bottom: 2em;
+    }
+    .card__price{
+        padding:.5em;
+        background: white;
+            .card__price-head{
+                margin: 0;
+                padding: 2em 1em 1.5em;
+                @include cover;
+                width: 100%;
+                h3{
+                    font-size: 1.2em;
+                    line-height: 1em;
+                    color: white;
+                    }
+                    p{
+                        color: white;
+                        font-weight: 700;
+                        font-size: .8em;
+                        line-height: 1em;
+                        margin-bottom: 1em;
+                  
+                    }
+                }
+               .card__price-text{
+                background: $purpleUltra;
+                 padding: .5em;
+                 position: relative;
+                 ul{
+                    padding: .8em 0 0;
+                    li{
+                        text-align: left;
+                        font-weight: 300;
+                        font-size: .85em;
+                        line-height: 1.2;
+                        margin-bottom: .8em;
+                        list-style: none;
+                        position: relative;
+                        &:before{
+                            content: " •";
+                            color: $purple;
+                            position: absolute;
+                            left: -.5em;
+                        }
+
+                    }
+                    li:last-child{
+                        font-weight: bold;
+                         &:before{
+                            content: " ";
+                        }
+
+                    }
+                 }
+                 button{
+                    right: 1em;
+                    bottom: 1.5em;
+                    position: absolute;
+                 }
+               } 
+            } 
+
+
+            .orbit-container{ 
+                max-width: 320px;
+                margin: 0 auto;
+                .orbit-slide:nth-child(3){
+                    .card__price-head{
+                        background: url(../assets/images/planes-capanas-google-adworks-1.jpg) center;
+                   }
+
+                }
+                 .orbit-slide:nth-child(4){
+                    .card__price-head{
+                        background: url(../assets/images/planes-capanas-google-adworks-2.jpg) center;
+                   }
+
+                }
+                 .orbit-slide:nth-child(5){
+                    .card__price-head{
+                        background: url(../assets/images/planes-capanas-google-adworks-3.jpg) center;
+                   }
+
+                }
+           }
+           .orbit-previous, .orbit-next {
+                position: absolute;
+                top: 50%;
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+                z-index: 10;
+                padding:  1rem .3rem;
+                color:  white;
+                background: $purpleLight;
+                z-index: 4;
+            }
+
+  }
+
+#other{
+    padding: 1em ;
+  article{
+    width: 100%;  
+  }
+  article:nth-child(1){
+        background: url(../assets/images/otros-servicios.jpg) center;
+        @include cover;
+        height: 190px;
+  }
+  article:nth-child(2){
+        background: $purpleUltra;
+        padding: 2.5em  1em;
+      h2{
+        font-size: 1.5em;
+        line-height: 1em;
+        font-weight: 200;
+        margin-bottom: 1em;
+    }   
+     p{
+        font-weight: 300;
+        color: #5d5d5d;
+        font-size: .85em;
+        line-height: 1.4em;
+        margin-bottom: 1em;
+    }
+      ul{
+                    padding: .2em 0 1em;
+                    li{
+                        text-align: left;
+                         color: #5d5d5d;
+                        font-weight: 300;
+                        font-size: .85em;
+                        line-height: 1.2;
+                        margin-bottom: .8em;
+                        list-style: none;
+                        position: relative;
+                        &:before{
+                            content: " •";
+                            color: $purple;
+                            position: absolute;
+                            left: -.5em;
+                        }
+
+                    }
+
+             }
+  }
+}
+
+#contact{
+     background: url(../assets/images/conatctBg.jpg) center;
+    @include cover;
+     padding: 3em 0.5em;
+     .translucent-form-overlay{
+        width: 320px;
+        margin: 0 auto;
+          h2{
+            font-size: 1.5em;
+            line-height: 1em;
+            font-weight: 200;
+            margin-bottom: 1em;
+            text-align: center;
+        } 
+        label{
+                font-weight: 400;
+                color: $purple;
+                font-size: .85em;
+                line-height: 1.4em;
+                margin-bottom: 1em;
+                input{
+                    border-radius: .5em;
+                }
+             select{
+                 border-radius: .5em;
+             }
+        }
+     }   
+     .padding1{
+            padding-right: 0.9375rem;
+          padding-left: 0.9375rem;
+     }
+     .terminos{
+        font-size: .9em;
+        color: $font;
+        a{
+            color: $purple;
+            text-decoration: underline;
+        }
+     }
+}
+
+
+   .reveal{
+        padding: 1em;
+        background: $grayLight;
+        .content-modal{
+            max-width: 320px;
+            margin: 0 auto;
+            background: white;
+            height: 100%;
+            padding: 1em;
+            article{
+                width: 100%;
+
+            }
+            article:nth-child(1){
+                  @include cover;
+                  height: 190px;
+                    background: url(../assets/images/tipos-de-campana-google-adworks.jpg) center;
+                    padding: 1em; 
+                    .text{
+                        background: rgba(255, 255, 255, .5);
+                        height: 100%;
+                        padding: 3em 1em;
+                        h2{
+                            margin: 0;
+                            padding: 0;
+                        }
+                        p{
+                            font-size: .8em;
+                        }
+                    }
+            }
+            article:nth-child(2){
+                text-align: center;
+                padding: 2em 1em;
+
+                      h2{
+                            font-size: 1.5em;
+                            line-height: 1em;
+                            font-weight: 200;
+                            margin-bottom: 1em;
+                        }   
+                         p{
+                            font-weight: 300;
+                            color: #5d5d5d;
+                            font-size: .85em;
+                            line-height: 1.4em;
+                            margin-bottom: 1em;
+                            strong{
+                                font-weight: bold;
+                            }
+                        }
+            }
+        }
+    }
+
+#testimoniales{
+    background: $grayLight;
+    margin-top: 1em;
+    padding: 3em .5em ;
+    text-align: center;
+    h2{
+        font-size: 1.5em;
+        line-height: 1em;
+        font-weight: 200;
+        margin-bottom: .5em;
+    }   
+     p{
+        font-weight: 300;
+        padding: 0 1em;
+        font-size: .9em;
+        line-height: 1.4em;
+        margin-bottom: 2em;
+    }
+    .card__testimoniales{
+        background: white;
+        max-width: 320px;
+        margin: 0 auto;
+        padding: .5em;
+        .card_testimoniales-content{
+            background: $purpleUltra;
+            padding: 1em;
+            img{
+                width: 140px;
+                border-radius: 50%;
+                margin-bottom: 1em;
+            }
+            h4{
+                font-size: 1.2em;
+                line-height: 1em; 
+                margin-bottom: 1em;
+            }
+             p{
+                font-weight: 300;
+                padding: 0 1em;
+                font-size: .8em;
+                line-height: 1.2em;
+                max-width: 320px;
+                margin: 0 auto 1em;
+               display: block;
+            }
+        }
+    }
+
+
+
+    // block
+.content-testimonial{
+ margin-bottom: 1em;
+}
+.featured-testimonials-section {
+  padding: 2rem 1rem;
+}
+
+.featured-testimonials-section .featured-testimonials-container .orbit-previous {
+  color: #0a0a0a;
+  left: -1rem;
+}
+
+.featured-testimonials-section .featured-testimonials-container .orbit-next {
+  color: #0a0a0a;
+  right: -1rem;
+}
+
+.featured-testimonials-section .testimonial {
+  margin: .5em;
+  text-align: left;
+  padding: 1em;
+}
+
+.featured-testimonials-section .testimonial  h3{
+    margin-bottom: 1em;
+}
+
+.featured-testimonials-section .testimonial  p{
+      color: $font;
+      font-size:  .85em;
+}
+.featured-testimonials-section .profile-pic {
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+.featured-testimonials-section .featured-testimonials-quotation {
+  margin-left: 3rem;
+  margin-bottom: 0rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.featured-testimonials-section .featured-testimonials-quotation::before {
+  content: "“";
+  font-size: 5rem;
+  color: #d6d6d6;
+  position: absolute;
+  left: 0;
+  font-family: 'Montserrat';
+}
+
+.featured-testimonials-section .featured-testimonials-quotation::after {
+  content: "”";
+  font-size: 5rem;
+  color: #d6d6d6;
+  position: absolute;
+  bottom: -1rem;
+  right: 0;
+  font-family: 'Montserrat';
+}
+
+@media screen and (max-width: 39.9375em) {
+  .featured-testimonials-section .featured-testimonials-quotation {
+    margin-left: 0;
+  }
+}
+}
+
+
+// ∆ Hacks
+    .send{
+        .input-group-rounded {
+            max-width: 16em;
+            margin: 0 auto 0;
+          .input-group-field {
+            border-radius: 1000px 0 0 1000px;
+            padding-left: 1rem;
+          }
+
+          .input-group-button .button {
+            border-radius:  0 1000px 1000px 0;
+            font-size: 0.8rem;
+            background-image:  url(../assets/images/iconSend.png);
+            background-position: 37% 56%;
+            background-repeat: no-repeat;
+            background-color: $pink;
+            color: white;
+            position: relative;
+            width: 4.2em;
+            &:hover{
+                background-color: $purple;
+            }
+          }
+
+        }
+
+      span{
+        font-size: .8em;
+      }
+    }
+    button.general{
+        background: $pink;
+        color: white;
+        font-size: .9em;
+        border-radius: .8em;
+        padding: 1em 2em;   
+        cursor: pointer;
+        transition: background .4s;
+        &:hover{
+            background: $purple;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
